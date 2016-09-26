@@ -51,17 +51,11 @@ $on-laptop:        800px;
 ;
 
 .background {
-	background: url(/assets/jacksonstbridge.jpg) no-repeat center center fixed;
+	// background: url(/assets/jacksonstbridge.jpg) no-repeat center center fixed;
+	background-color: #333;
 	background-size: cover; 
 	height: 100vh;
 	width: 100%;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-}
-
-.words {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -76,20 +70,32 @@ $on-laptop:        800px;
 	text-align: center;
 	letter-spacing: 0.15em;
 	margin: 0 50px 20px 50px; 
-
+	color: #FFFFFF;
 }
 
 .subtitle {
+	max-width: 860px;
 	letter-spacing: 0.15em; 
 	font-weight: 700;
+	text-align: center;
+	margin: 0 50px; 
+	color: #FFFFFF;
+}
+
+.social {
+	margin: 30px;
+}
+
+.social a {
+	padding: 7px; 
 }
 
 .footer {
   margin: 10px 0;
   position: fixed;
-  bottom: 0px;
+  bottom: 5px;
   text-align: center;
-  color: #000000;
+  color: #FFFFFF;
 }
 
 p,
@@ -99,5 +105,5 @@ svg {
 }
 
 svg {
-  margin: 5px -3px 0 0;
+  margin: 5px -5px 0 0;
 }
