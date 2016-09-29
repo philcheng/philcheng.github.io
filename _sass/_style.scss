@@ -43,6 +43,14 @@
 	padding: 7px; 
 }
 
+.social:hover > a {
+	opacity: 0.5;
+}
+
+.social:hover a:hover {
+	opacity: 1.0;
+}
+
 .footer {
   // background-color: gray;
   position: fixed;
