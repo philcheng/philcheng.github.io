@@ -1,11 +1,11 @@
 ---
 layout: default
 ---
-
 <body>
 
-  <div class="container">
-    <div class="background">
+  <main class="container">
+    <div class="segmenter"></div>
+    <div class="content">
         <h1 class="title">Born and raised in New York. Grew in Atlanta.</h1>
         <div class="subtitle">Industrial and UX designer. Connect with me through the channels below.</div>
         <div class="social">
@@ -26,8 +26,10 @@ layout: default
           {% include footeremoj.html %}
           <p>TL</p>
         </div>
-  </div>
-
+  </main>
+  <script src="js/anime.min.js"></script>
+  <script src="js/imagesloaded.pkgd.min.js"></script>
+  <script src="js/main.js"></script>
+  {% include segmentedbackground.html %}
   {% include googleanalytics.html %}
-
 </body>

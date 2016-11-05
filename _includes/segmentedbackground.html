@@ -1,0 +1,29 @@
+<!-- segmented background script -->
+<script>
+(function() {
+	var segmenter = new Segmenter(document.querySelector('.segmenter'), {
+		pieces: 3,
+		positions: [
+			{top: 23, left: 12, width: 20, height: 30},
+			{top: 20, left: 53, width: 30, height: 20},
+			{top: 60, left: 25, width: 40, height: 20},
+			{top: 70, left: 35, width: 40, height: 20},
+		],
+		animation: {
+			duration: 3000,
+			easing: 'easeOutCubic',
+			delay: 0,
+			opacity: 1,
+			translateZ: 85,
+			translateX: {min: -20, max: 20},
+			translateY: {min: -20, max: 20}
+		},
+		parallax: true,
+		shadows: true,
+		parallaxMovement: {min: 15, max: 20},
+		onReady: function() {
+			segmenter.animate();
+		}
+	});
+})();
+</script>
