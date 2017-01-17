@@ -1,3 +1,5 @@
+// home page---------------------------------
+
 .container {
 	height: 100%;
 }
@@ -58,20 +60,25 @@
 	align-items: center;
 }
 
-
-.title {
+.home_title {
 	max-width: 730px;
 	font-size: 2.8em;
 	line-height: 1.2em;
 	font-weight: 300;
 	text-align: center;
 	letter-spacing: 0.05em;
-	margin: 0 50px 20px 50px; 
+	margin: 0 50px 10px 50px; 
 	color: #FFFFFF;
 }
 
-.subtitle {
-	max-width: 860px;
+@media (max-width: 500px) {
+  .home_title {
+    font-size: 2.3em;
+  }
+}
+
+.home_subtitle {
+	max-width: 750px;
 	font-size: 1.05em;
 	letter-spacing: 0.1em; 
 	font-weight: 400;
@@ -80,12 +87,21 @@
 	color: #FFFFFF;
 }
 
-.social {
-	margin: 30px;
+.connect {
+	margin: 35px 0;
 	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
-.social #icon {
+.projects {
+	margin-bottom: 30px;
+
+}
+
+.connect #icon {
 	display: inline-block;
 	padding: 7px; 
 }
@@ -95,21 +111,22 @@
 .name3, 
 .name4,
 .name5 {
-  // border: solid black;
-  position: absolute;
-  margin: 7px 0 0 0;
-  width: 265px;
-  opacity: 0;
-  color: #FFFFFF;
-  transition: all 0.3s ease-out;
-  font-weight: 300;
+	position: absolute;
+	margin: 5px 0 0 0;
+	width: 265px;
+	opacity: 0;
+	color: #FFFFFF;
+	transition: all 0.3s ease-out;
+	font-weight: 300;
 }
 
-.social:hover #icon {
+.connect:hover #icon,
+.connect:hover #icon-lrg {
 	opacity: 0.5;
 }
 
-.social:hover #icon:hover {
+.social:hover #icon:hover,
+.projects:hover #icon-lrg:hover {
 	opacity: 1.0;
 }
 
@@ -138,7 +155,6 @@
 	position: absolute;
 	bottom: 0;
 	width: 100%;
-  // margin: -60px 0 0 0;
  	text-align: center;
  	color: #FFFFFF;
 }
@@ -151,4 +167,54 @@ svg {
 
 svg {
   margin: 5px -5px 0 0;
+}
+
+// work page---------------------------------
+.work_wrap {
+	text-align: center;
+}
+
+.home_link {
+	margin: 20px;
+	text-transform: uppercase;
+}
+
+.home_link a {
+	font-size: 20px;
+	font-weight: 400;
+	letter-spacing: 0.5px;
+	color: #000000;
+	text-decoration: none;
+}
+
+.home_link a:hover {
+	text-decoration: underline;
+}
+
+.work_header {
+	background-color: #333333;
+	padding: 50px;
+	color: #FFFFFF;
+	line-height: 30px;
+	font-weight: 300;
+}
+
+.work_title {
+	text-transform: uppercase;
+	font-size: 30px;
+	letter-spacing: 3px;
+}
+
+.work_subtitle {
+	letter-spacing: 1px;
+}
+
+.work_piece {
+	margin: 30px 0;
+}
+
+.work_piece img {
+	max-width: 1220px;
+	width: 100%;
+	margin: 30px 0;
 }
