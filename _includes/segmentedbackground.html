@@ -2,25 +2,24 @@
 <script>
 (function() {
 	var segmenter = new Segmenter(document.querySelector('.segmenter'), {
-		pieces: 3,
+		pieces: 1,
 		positions: [
-			{top: 23, left: 12, width: 20, height: 30},
-			{top: 20, left: 53, width: 30, height: 20},
-			{top: 60, left: 25, width: 40, height: 20},
-			{top: 70, left: 35, width: 40, height: 20},
+			{top: 8, left: 8, width: 85, height: 85},
+			// {top: 25, left: 23, width: 60, height: 1},
+
 		],
 		animation: {
 			duration: 3000,
 			easing: 'easeOutCubic',
 			delay: 0,
 			opacity: 1,
-			translateZ: 85,
-			translateX: {min: -20, max: 20},
-			translateY: {min: -20, max: 20}
+			translateZ: 30,
+			translateX: {min: 0, max: 0},
+			translateY: {min: 0, max: 0}
 		},
 		parallax: true,
 		shadows: true,
-		parallaxMovement: {min: 15, max: 20},
+		parallaxMovement: {min: 10, max: 40},
 		onReady: function() {
 			segmenter.animate();
 		}
