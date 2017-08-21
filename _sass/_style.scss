@@ -168,12 +168,8 @@ svg {
 }
 
 // work page---------------------------------
-.work_wrap {
-	text-align: center;
-}
-
 .home_link {
-	margin: 20px;
+	margin: 50px;
 	text-transform: uppercase;
 }
 
@@ -189,6 +185,10 @@ svg {
 	text-decoration: underline;
 }
 
+.work_wrap {
+	text-align: center;
+}
+
 .work_header {
 	background-color: #333333;
 	padding: 50px;
@@ -197,14 +197,16 @@ svg {
 	font-weight: 300;
 }
 
-.work_title {
+.work_header .work_title {
 	text-transform: uppercase;
 	font-size: 1.875em;
-	letter-spacing: 3px;
+	letter-spacing: 1px;
+	color: #fff;
 }
 
-.work_subtitle {
+.work_header .work_subtitle {
 	letter-spacing: 1px;
+	color: #fff;
 }
 
 .work_piece {
@@ -215,4 +217,17 @@ svg {
 	max-width: 1220px;
 	width: 100%;
 	margin: 30px 0;
+}
+
+// website work page---------------------------------
+.work_title {
+	text-transform: uppercase;
+	font-size: 1.875em;
+	letter-spacing: 0.5px;
+	color: #333;
+}
+
+.work_subtitle {
+	letter-spacing: 0.7px;
+	color: #333;
 }
