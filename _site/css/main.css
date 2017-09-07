@@ -534,3 +534,7 @@ svg {
 .work_subtitle {
   letter-spacing: 0.7px;
   color: #333; }
+
+.work_subtitle a {
+  letter-spacing: 0.7px;
+  color: #333; }
