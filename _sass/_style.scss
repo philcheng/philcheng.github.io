@@ -1,16 +1,13 @@
 // home page---------------------------------
-
 .container {
 	height: 100%;
 }
-
 .segmenter {
 	width: 100vw;
 	height: 100vh;
 	position: relative;
 	overflow: hidden;
 }
-
 .segmenter__background,
 .segmenter__pieces,
 .segmenter__piece-wrap,
@@ -23,15 +20,12 @@
 	left: 0;
 	transform-style: preserve-3d;
 }
-
 .segmenter__piece-parallax {
 	transition: transform 0.2s ease-out;
 }
-
 .segmenter__pieces {
 	perspective: 400px;
 }
-
 .segmenter__background,
 .segmenter__piece,
 .segmenter {
@@ -39,13 +33,11 @@
 	background-repeat: no-repeat;
 	background-position: 50% 50%;
 }
-
 .segmenter__shadow {
 	position: absolute;
 	opacity: 0;
 	box-shadow: 0px 10px 35px rgba(25, 23, 20, 0.7);
 }
-
 .work {
 	top: 2vh;
 	left: 0;
@@ -54,7 +46,6 @@
 	text-align: center;
 	color: #dddddd;
 }
-
 .content {
 	top: 0;
 	left: 0;
@@ -66,7 +57,6 @@
 	justify-content: center;
 	align-items: center;
 }
-
 .home_title {
 	max-width: 730px;
 	font-size: 2.8em;
@@ -77,13 +67,6 @@
 	margin: 0 50px 10px 50px; 
 	color: #FFFFFF;
 }
-
-@media (max-width: 500px) {
-  .home_title {
-    font-size: 2.3em;
-  }
-}
-
 .home_subtitle {
 	max-width: 750px;
 	font-size: 1.05em;
@@ -93,7 +76,6 @@
 	margin: 0 50px; 
 	color: #FFFFFF;
 }
-
 .connect {
 	margin: 35px 0;
 	text-align: center;
@@ -102,17 +84,13 @@
 	justify-content: center;
 	align-items: center;
 }
-
 .projects {
 	margin-bottom: 30px;
-
 }
-
 .connect #icon {
 	display: inline-block;
 	padding: 7px; 
 }
-
 .name1,
 .name2, 
 .name3, 
@@ -126,38 +104,34 @@
 	transition: all 0.3s ease-out;
 	font-weight: 300;
 }
-
 .connect:hover #icon,
 .connect:hover #icon-lrg {
 	opacity: 0.5;
 }
-
 .social:hover #icon:hover,
 .projects:hover #icon-lrg:hover {
 	opacity: 1.0;
 }
-
 .icon1:hover ~ .name1 {
-  margin: 10px 0;
-  opacity: 1.0;
+	margin: 10px 0;
+	opacity: 1.0;
 }
 .icon2:hover ~ .name2 {
-  margin: 10px 0;
-  opacity: 1.0;
+	margin: 10px 0;
+	opacity: 1.0;
 }
 .icon3:hover ~ .name3 {
-  margin: 10px 0;
-  opacity: 1.0;
+	margin: 10px 0;
+	opacity: 1.0;
 }
 .icon4:hover ~ .name4 {
-  margin: 10px 0;
-  opacity: 1.0;
+	margin: 10px 0;
+	opacity: 1.0;
 }
 .icon5:hover ~ .name5 {
-  margin: 10px 0;
-  opacity: 1.0;
+	margin: 10px 0;
+	opacity: 1.0;
 }
-
 .footer {
 	position: absolute;
 	bottom: 0;
@@ -165,83 +139,95 @@
  	text-align: center;
  	color: #FFFFFF;
 }
-
 p,
 svg {
-  display:inline-block;
-  margin: 25px 0 10px 0;
+	display:inline-block;
+	margin: 25px 0 10px 0;
 }
-
 svg {
-  margin: 5px -5px 0 0;
+	margin: 5px -5px 0 0;
 }
-
 // work page---------------------------------
 .home_link {
-	margin: 50px;
+	margin: 40px 0 30px 50px;
 	text-transform: uppercase;
 }
-
 .home_link a {
 	font-size: 1.25em;
 	font-weight: 400;
 	letter-spacing: 0.5px;
-	color: #000000;
-	text-decoration: none;
-}
-
-.home_link a:hover {
+	color: #333;
 	text-decoration: underline;
 }
-
+.home_link a:hover {
+	text-decoration: none;
+}
 .work_wrap {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 	text-align: center;
 }
-
-.work_header {
-	background-color: #333333;
-	padding: 50px;
-	color: #FFFFFF;
-	line-height: 30px;
-	font-weight: 300;
-}
-
-.work_header .work_title {
-	text-transform: uppercase;
-	font-size: 1.875em;
-	letter-spacing: 1px;
-	color: #fff;
-}
-
-.work_header .work_subtitle {
-	letter-spacing: 1px;
-	color: #fff;
-}
-
-.work_piece {
-	margin: 30px 0;
-}
-
-.work_piece img {
-	max-width: 1220px;
-	width: 100%;
-	margin: 30px 0;
-}
-
-// website work page---------------------------------
+// .work_header {
+// 	background-color: #333333;
+// 	padding: 50px;
+// 	color: #FFFFFF;
+// 	line-height: 30px;
+// 	font-weight: 300;
+// }
+// .work_header .work_title {
+// 	text-transform: uppercase;
+// 	font-size: 1.875em;
+// 	letter-spacing: 1px;
+// 	color: #fff;
+// }
+// .work_header .work_subtitle {
+// 	letter-spacing: 1px;
+// 	color: #fff;
+// }
 .work_title {
+	margin: 30px 20px 0;
 	text-transform: uppercase;
 	font-size: 1.875em;
 	letter-spacing: 0.5px;
 	color: #333;
 }
-
 .work_subtitle {
+	margin: 5px 20px 30px;
 	letter-spacing: 0.7px;
 	color: #333;
 }
-
 .work_subtitle a {
 	letter-spacing: 0.7px;
 	color: #333;
+}
+.work_pieces {
+	max-width: 1200px;
+	margin: 30px 0;
+}
+.full_image {
+	margin: 30px 0;
+}
+.half_image {
+	margin: 30px 0px;
+	width: 47.5%;
+}
+.space {
+	display: inline-block;
+	width: 5%;
+}
+// media queries---------------------------------
+@media (max-width: 768px) {
+  .home_title {
+    font-size: 2.3em;
+  }
+  .home_link {
+		width: 100%;
+		margin: 30px 0 0 0;
+		text-align: center;
+	}
+	.half_image {
+		width: 100%;
+		margin: 30px 0;
+	}
 }
