@@ -1,0 +1,12 @@
+.flexbox {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+}
+img,
+iframe {
+  width: 100%;
+  border: none;
+  box-sizing: border-box;
+}

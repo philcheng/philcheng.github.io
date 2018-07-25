@@ -1,0 +1,66 @@
+---
+layout: default
+permalink: facebook
+---
+<!doctype html>
+<html>
+<head>
+<!-- Wow, Facebook peeps, diving pretty deep here. Well, glad you are looking into my work :) -->
+	<link rel="stylesheet" href="smartscroll/css/smartscroll.css">
+	<link rel="stylesheet" href="smartscroll/css/style.css">
+	<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+</head>
+<body>
+<!-- Hello Facebook, not much here. There are some images and a scrolling library. I put this together just for you guys. Thanks for peeking, though! -->
+	<div class="section-wrapper">
+		<div class="section" data-hash="">
+			<div>
+				<img src="smartscroll/images/premeeting.png" alt="">
+			</div>
+		</div>
+		<div class="section" data-hash="">
+			<div>
+				<img src="smartscroll/images/name.png" alt="">
+			</div>
+		</div>
+		<div class="section" data-hash="">
+			<div>
+				<img src="smartscroll/images/outline.png" alt="">
+			</div>
+		</div>
+	</div>
+	<div class="flexbox">
+		<img src="smartscroll/images/shift.png" alt="">
+		<iframe src="https://invis.io/GCN3GRITMRJ#/310073498_shift_1" height="900px"></iframe>
+		<img src="smartscroll/images/cafecart.png" alt="">
+		<p data-height="706" data-theme-id="0" data-slug-hash="OWORgm" data-default-tab="result" data-user="philcheng" data-embed-version="2" data-pen-title="React Shopping Cart w/ SVG" class="codepen">See the Pen <a href="https://codepen.io/philcheng/pen/OWORgm/">React Shopping Cart w/ SVG</a> by Phil Cheng (<a href="https://codepen.io/philcheng">@philcheng</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+		<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+		<img src="smartscroll/images/calendly.png" alt="">
+		<iframe src="https://framer.cloud/irAHP/" height="900px"></iframe>
+		<img src="smartscroll/images/end.png" alt="">
+	</div>
+	<script src="https://rawgit.com/Olical/EventEmitter/master/EventEmitter.min.js"></script>
+	<script type="text/javascript" src="smartscroll/lethargy.min.js"></script>
+	<script type="text/javascript" src="smartscroll/smartscroll.min.js"></script>
+	<script>
+		var ee = new EventEmitter();
+		var scrollStartListener = function (slideNumber) {
+			console.log("Scrolling to " + slideNumber);
+		}
+		var scrollEndListener = function (slideNumber) {
+			console.log("Scrolling End. Now at section " + slideNumber);
+		}
+		ee.addListener('scrollStart', scrollStartListener);
+		ee.addListener('scrollEnd', scrollEndListener);
+		var smartscroll = $.smartscroll({
+			sectionWrapperSelector: ".section-wrapper",
+			sectionClass: "section",
+			headerHash: "welcome",
+			autoHash: false,
+			sectionScroll: true,
+			eventEmitter: ee
+		});
+		console.log(smartscroll);
+	</script>
+</body>
+</html>
